@@ -2,7 +2,8 @@
   "pages": [
     "pages/wifi/index",
     "pages/index2/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/photo/photo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,13 +22,13 @@
         "selectedIconPath": "assets/images/icon/home.png",
         "iconPath": "assets/images/icon/home_def.png",
         "pagePath": "pages/wifi/index",
-        "text": "链接一楼WIFI"
+        "text": "连接WIFI"
       },
       {
         "selectedIconPath": "assets/images/icon/home.png",
         "iconPath": "assets/images/icon/home_def.png",
-        "pagePath": "pages/wifi/index",
-        "text": "链接二楼WIFI"
+        "pagePath": "pages/photo/index",
+        "text": "打开相册"
       }
     ]
   }
