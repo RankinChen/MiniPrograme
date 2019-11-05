@@ -1,9 +1,8 @@
 {
   "pages": [
     "pages/wifi/index",
-    "pages/index2/index",
     "pages/logs/logs",
-    "pages/photo/photo"
+    "pages/photo/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
