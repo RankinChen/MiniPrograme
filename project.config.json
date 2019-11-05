@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.1",
 	"appid": "wx00a84200bc574d2e",
-	"projectname": "drypointMiniProgram",
+	"projectname": "DrypointMiniProgram",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

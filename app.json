@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/wifi/index",
+    "pages/index2/index",
     "pages/logs/logs"
   ],
   "window": {
@@ -10,5 +11,24 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#dfdfdf",
+    "selectedColor": "#6078F5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "assets/images/icon/home.png",
+        "iconPath": "assets/images/icon/home_def.png",
+        "pagePath": "pages/wifi/index",
+        "text": "链接一楼WIFI"
+      },
+      {
+        "selectedIconPath": "assets/images/icon/home.png",
+        "iconPath": "assets/images/icon/home_def.png",
+        "pagePath": "pages/wifi/index",
+        "text": "链接二楼WIFI"
+      }
+    ]
+  }
 }
