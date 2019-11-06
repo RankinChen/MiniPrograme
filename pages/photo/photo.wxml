@@ -1,2 +1,7 @@
 <!--pages/photo/photo.wxml-->
-<text>test</text>
+<view>
+
+<view class="shishi">中学信息技术教学研发中心</view>
+
+
+</view>

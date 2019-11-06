@@ -1,1 +1,4 @@
 /* pages/photo/photo.wxss */
+.shishi{
+  animation: zoomInUp 5s infinite;
+}

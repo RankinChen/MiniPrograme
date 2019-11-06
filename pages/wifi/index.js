@@ -1,11 +1,27 @@
 // pages/wifi/index.js
+const { $Toast } = require('../../dist/base/index');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    msg: '一楼 WIFI',
+    msg2: '二楼 WIFI',
+    icon: '>'
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    $Toast({
+      content: '一楼成功的提示',
+      type: 'success'
+    });
+  },
+  bindViewTap2: function () {
+    $Toast({
+      content: '二楼成功的提示',
+      type: 'success'
+    });
   },
 
   /**
