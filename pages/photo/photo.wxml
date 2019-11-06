@@ -1,7 +1,6 @@
 <!--pages/photo/photo.wxml-->
 <view>
-
-<view class="shishi">中学信息技术教学研发中心</view>
-
-
+  <view>
+    <image wx:for="{{imgList}}" src="{{item}}" wx:key="{{index}}" class="shishi"></image>
+  </view>
 </view>

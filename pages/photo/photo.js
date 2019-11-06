@@ -5,9 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgList: [
+      '../../assets/images/1.jpg',
+      '../../assets/images/2.jpg',
+      '../../assets/images/3.jpg',
+      '../../assets/images/4.jpg',
+      '../../assets/images/5.jpg',
+      '../../assets/images/6.jpg',
+      '../../assets/images/7.jpg',
+      '../../assets/images/8.jpg',
+      '../../assets/images/9.jpg'
+    ],
+    list: [
+      { "url": "http://abc.com/i1.png", "title": "tlt1" },
+      { "url": "http://abc.com/i2.png", "title": "tlt2" },
+      { "url": "http://abc.com/i3.png", "title": "tlt3" }
+    ],
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

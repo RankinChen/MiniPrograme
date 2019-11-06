@@ -4,7 +4,7 @@
     <image class="heard_banner" src="../../assets/images/banner.png"></image>
   </view>
   
-    <i-card bindtap="bindViewTap" title="{{msg}}" extra=">" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <i-card bindtap="bindViewTap" title="{{msg}}" extra=">" thumb="../../assets/images/wifi.jpg">
     </i-card>
 
     <i-card bindtap="bindViewTap2" title="{{msg2}}" extra="{{icon}}" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
