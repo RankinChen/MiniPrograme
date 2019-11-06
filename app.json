@@ -2,7 +2,7 @@
   "pages": [
     "pages/wifi/index",
     "pages/logs/logs",
-    "pages/photo/index"
+    "pages/photo/photo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,9 +24,9 @@
         "text": "连接WIFI"
       },
       {
-        "selectedIconPath": "assets/images/icon/home.png",
-        "iconPath": "assets/images/icon/home_def.png",
-        "pagePath": "pages/photo/index",
+        "selectedIconPath": "assets/images/icon/my.png",
+        "iconPath": "assets/images/icon/my_def.png",
+        "pagePath": "pages/photo/photo",
         "text": "打开相册"
       }
     ]

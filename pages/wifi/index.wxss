@@ -55,3 +55,8 @@ van-card {
   color: #e4e4e4;
   font-size: 26px !important;
 }
+
+.i-card{
+  margin: 15px 16px!important;
+
+}
