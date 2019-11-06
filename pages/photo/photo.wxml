@@ -1,6 +1,7 @@
 <!--pages/photo/photo.wxml-->
 <view>
   <view>
-    <image wx:for="{{imgList}}" src="{{item}}" wx:key="{{index}}" class="shishi"></image>
+    <image wx:for="{{imgList}}" src="{{item}}" wx:key="{{index}}"
+    class="{{'shishi' +index}}"></image>
   </view>
 </view>
