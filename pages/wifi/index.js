@@ -14,9 +14,9 @@ Page({
     wifiError: '', //初始化错误提示
     system: '', //版本号
     platform: '', //系统 android
-    ssid1: 'AlibabaCenter', //wifi1帐号(必填)
-    pass1: 'ali888888', //wifi1密码(必填)
-    ssid2: 'chen2', //wifi2帐号(必填)
+    ssid1: 'Chen-WIFI', //wifi1帐号(必填)
+    pass1: '123456789', //wifi1密码(必填)
+    ssid2: 'Chen-WIFI2', //wifi2帐号(必填)
     pass2: '123456789', //wifi2密码(必填)
   },
   //事件处理函数
