@@ -1,7 +1,24 @@
-<!--pages/photo/photo.wxml-->
 <view>
-  <view>
-    <image wx:for="{{imgList}}" src="{{item}}" wx:key="{{index}}"
-    class="{{'shishi' +index}}"></image>
+  <view bindtap="changePage">test 测试横屏效果</view>
+  <view class="container">
+    <view class="page-body">
+      <view class="page-section">
+        <!-- <view class="page-section-title">
+          <text >纵向滚动</text>
+        </view> -->
+        <view class="page-section-spacing">
+          <image class="imgBg" src="../../assets/images/bg/1.png"></image>
+          <scroll-view scroll-y="true" style="height: 800rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view class="imgWrap" wx:for="{{imgList}}" wx:key="{{index}}">
+              <text class="title">{{item.title}}</text>
+              <image src="{{item.url}}" wx:key="{{index}}" class="{{'shishi' +index}}">
+              </image>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+
+    </view>
   </view>
+
 </view>

@@ -1,31 +1,59 @@
 /* pages/photo/photo.wxss */
-.shishi0{
+
+.imgWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.imgBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.title {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.shishi0 {
   animation: zoomInUp 5s infinite;
 }
-.shishi1{
+
+.shishi1 {
   animation: jello 5s infinite;
 }
-.shishi2{
+
+.shishi2 {
   animation: swing 5s infinite;
 }
-.shishi3{
+
+.shishi3 {
   animation: zoomInLeft 5s infinite;
 }
-.shishi4{
+
+.shishi4 {
   animation: zoomInRight 5s infinite;
 }
-.shishi5{
+
+.shishi5 {
   animation: fadeOutUp 5s infinite;
 }
-.shishi6{
+
+.shishi6 {
   animation: fadeInLeft 5s infinite;
 }
-.shishi7{
+
+.shishi7 {
   animation: fadeInLeft 5s infinite;
 }
-.shishi8{
+
+.shishi8 {
   animation: fadeInLeft 5s infinite;
 }
-.shishi9{
+
+.shishi9 {
   animation: fadeInLeft 5s infinite;
 }
