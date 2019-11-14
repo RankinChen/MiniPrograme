@@ -1,5 +1,5 @@
 <view>
-  <view bindtap="changePage">test 测试横屏效果</view>
+  <!-- <view bindtap="changePage">test 测试横屏效果</view> -->
   <view class="container">
     <view class="page-body">
       <view class="page-section">
@@ -8,11 +8,14 @@
         </view> -->
         <view class="page-section-spacing">
           <image class="imgBg" src="../../assets/images/bg/1.png"></image>
-          <scroll-view scroll-y="true" style="height: 800rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-            <view class="imgWrap" wx:for="{{imgList}}" wx:key="{{index}}">
+          <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toIndex}}" scroll-top="{{scrollTop}}" scroll-with-animation="true" enable-back-to-top="true">
+            <view class="imgWrap" wx:for="{{imgList}}" wx:key="{{index}}" id="{{item.id}}">
               <text class="title">{{item.title}}</text>
               <image src="{{item.url}}" wx:key="{{index}}" class="{{'shishi' +index}}">
               </image>
+              <view class="skip" bindtap="skip" data-id="{{item.id}}" data-index="{{index}}">
+                {{tip}}
+              </view>
             </view>
           </scroll-view>
         </view>

@@ -1,49 +1,48 @@
-// pages/photo/photo.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     imgList: [{
+        "url": '../../assets/images/0.jpg',
+        "title": "tlt0",
+        "id": "index0"
+      },
+      {
         "url": '../../assets/images/1.jpg',
-        "title": "tlt1"
+        "title": "tlt1",
+        "id": "index1"
       },
       {
         "url": '../../assets/images/2.jpg',
-        "title": "tlt2"
+        "title": "tlt2",
+        "id": "index2"
       },
       {
         "url": '../../assets/images/3.jpg',
-        "title": "tlt3"
+        "title": "tlt3",
+        "id": "index3"
       },
       {
         "url": '../../assets/images/4.jpg',
-        "title": "tlt1"
+        "title": "tlt4",
+        "id": "index4"
       },
       {
         "url": '../../assets/images/5.jpg',
-        "title": "tlt2"
+        "title": "tlt5",
+        "id": "index5"
       },
       {
         "url": '../../assets/images/6.jpg',
-        "title": "tlt3"
+        "title": "tlt6",
+        "id": "index6"
       }
     ],
-    list: [{
-        "url": "http://abc.com/i1.png",
-        "title": "tlt1"
-      },
-      {
-        "url": "http://abc.com/i2.png",
-        "title": "tlt2"
-      },
-      {
-        "url": "http://abc.com/i3.png",
-        "title": "tlt3"
-      }
-    ],
-    toView: 'green'
+    tip: "下一页",
+    tipEnd: "结束",
+    toIndex: '',
+    scrollHeight: ''
   },
   upper(e) {
     console.log(e)
@@ -54,42 +53,51 @@ Page({
   },
 
   scroll(e) {
-    console.log(e)
+   // console.log(e)
   },
 
   scrollToTop() {
+    console.log("1111")
     this.setAction({
       scrollTop: 0
     })
   },
 
-  tap() {
-    for (let i = 0; i < order.length; ++i) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1],
-          scrollTop: (i + 1) * 200
-        })
-        break
-      }
+  skip(e) {
+    console.log(e)
+    let that = this;
+    let index = e.currentTarget.dataset.index;
+    index ++
+    let id = "index" + index;
+    console.log(id)
+    that.setData({
+      toIndex: id
+    })
+    if (index == that.data.imgList.length){
+      that.setData({
+        toIndex: "index0"
+      })
     }
   },
-
-  tapMove() {
-    this.setData({
-      scrollTop: this.data.scrollTop + 10
-    })
-  },
-  changePage() {
-    wx.redirectTo({
-      url: "../test/test"
-    })
-  },
+  // changePage() {
+  //   wx.redirectTo({
+  //     url: "../test/test"
+  //   })
+  // },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    var that = this;
+    //获取系统的参数，scrollHeight数值,微信必须要设置style:height才能监听滚动事件
+    wx.getSystemInfo({
+      success: function(res) {
+        that.setData({
+          scrollHeight: parseInt(res.windowHeight) - 40
+        })
+      }
+    });
   },
 
   /**

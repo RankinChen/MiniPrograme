@@ -9,26 +9,20 @@
         </view>
         <view class="vol-card" data-id="{{item.id}}" catchtap="onPostTap">
 
-          <!--<view data-detail-href="{{item.detailHref}}" class="item">-->
-
           <!--图片-->
           <image class="vol-picture" src="{{item.url}}" mode="aspectFill" class="{{'shishi' +index}}"></image>
-
           <!--标题-->
           <view class="vol-meta-title">
             <text class="vol-number">{{item.title}}</text>
           </view>
-
           <!--时间-->
           <view class="vol-meta-time">
             <!-- <text>{{item.inputtime}}</text> -->
           </view>
-
           <!--描述信息-->
           <view class="vol-content">
             <!-- <text class="vol-content-text">{{item.description}}</text> -->
           </view>
-
           <!--</view>-->
         </view>
       </swiper-item>
